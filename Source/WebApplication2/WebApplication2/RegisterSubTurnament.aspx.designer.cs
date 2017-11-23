@@ -10,7 +10,7 @@
 namespace WebApplication2 {
     
     
-    public partial class RegisterTurnament {
+    public partial class RegisterSubTurnament {
         
         /// <summary>
         /// form1 control.
@@ -22,39 +22,66 @@ namespace WebApplication2 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// LabelRegisterTurnament control.
+        /// TextBoxParent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelRegisterTurnament;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxParent;
         
         /// <summary>
-        /// TextBoxTurnamentName control.
+        /// TextBoxSub control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxTurnamentName;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxSub;
         
         /// <summary>
-        /// ButtonAddTurnament control.
+        /// ListBoxTurnaments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonAddTurnament;
+        protected global::System.Web.UI.WebControls.ListBox ListBoxTurnaments;
         
         /// <summary>
-        /// Cancel control.
+        /// ButtonRefresh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Cancel;
+        protected global::System.Web.UI.WebControls.Button ButtonRefresh;
+        
+        /// <summary>
+        /// ButtonRegister control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonRegister;
+        
+        /// <summary>
+        /// ButtonCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonCancel;
+        
+        /// <summary>
+        /// LabelResult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelResult;
     }
 }

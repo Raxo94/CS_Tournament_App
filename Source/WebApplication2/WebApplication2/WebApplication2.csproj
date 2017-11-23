@@ -233,6 +233,13 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="RegisterSubTurnament.aspx.cs">
+      <DependentUpon>RegisterSubTurnament.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterSubTurnament.aspx.designer.cs">
+      <DependentUpon>RegisterSubTurnament.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RegisterTurnament.aspx.cs">
       <DependentUpon>RegisterTurnament.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,10 +247,9 @@
     <Compile Include="RegisterTurnament.aspx.designer.cs">
       <DependentUpon>RegisterTurnament.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RestClient.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\TurnamentController.cs" />
+    <Compile Include="Turnament.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -277,6 +283,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="RegisterSubTurnament.aspx" />
     <Content Include="RegisterTurnament.aspx" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />

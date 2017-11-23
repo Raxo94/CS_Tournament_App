@@ -19,6 +19,7 @@
     </div>
         <p>
             <asp:Button ID="ButtonAddTurnament" runat="server" OnClick="ButtonAddTurnament_Click" Text="Add" />
+            <asp:Button ID="Cancel" runat="server" OnClick="Cancel_Click" Text="Go Back" />
         </p>
     </form>
 </body>

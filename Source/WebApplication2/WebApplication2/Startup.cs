@@ -14,17 +14,7 @@ namespace WebApplication2
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-            TurnamentHandler.five = 5;
-            
-
         }
-
-        public static class TurnamentHandler
-        {
-            public static int five = 6;
-            public static List<Turnament> turnaments = new List<Turnament>();
-
-        };
 
     }
 

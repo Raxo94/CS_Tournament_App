@@ -16,12 +16,6 @@ namespace WebApplication2
 
         protected void ButtonAddPlayer_Click(object sender, EventArgs e)
         {
-            //Response.Redirect("Webform1.aspx");
-            RestClient_Namespace.RestClient rClient = new RestClient_Namespace.RestClient();
-            rClient.endPoint = TextBoxAge.Text;
-            string strResponse = string.Empty;
-            strResponse = rClient.makeRequest();
-            TextBoxName.Text = strResponse;
 
         }
     }

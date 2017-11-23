@@ -49,6 +49,15 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.Button ButtonRefresh;
         
         /// <summary>
+        /// ButtonRegisterSubTurnament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonRegisterSubTurnament;
+        
+        /// <summary>
         /// LabelTurnaments control.
         /// </summary>
         /// <remarks>
@@ -65,5 +74,14 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox ListBoxTurnaments;
+        
+        /// <summary>
+        /// ClearTurnaments control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ClearTurnaments;
     }
 }
