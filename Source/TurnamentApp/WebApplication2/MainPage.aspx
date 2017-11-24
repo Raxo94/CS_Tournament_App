@@ -16,6 +16,7 @@
     
         <asp:Button ID="ButtonHandleTurnament" runat="server" OnClick="ButtonHandleTurnament_Click" style="margin-bottom: 1px" Text="Handle Turnaments" Width="211px" />
         <br />
+        <asp:Button ID="ButtonRegisterPlayersInTurnaments" runat="server" OnClick="ButtonRegisterPlayersInTurnaments_Click" style="height: 29px" Text="Register Players In Turnaments" Width="251px" />
         <br />
         <asp:Label ID="LabelTurnaments" runat="server" Text="Turnaments"></asp:Label>
     

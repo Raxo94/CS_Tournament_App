@@ -25,7 +25,7 @@ namespace WebApplication2
                     int newDepth = parentT.depth + 1;
                     if (newDepth < 10)
                     {
-                        Turnament subT = new Turnament(newDepth, TextBoxSub.Text,parentT.name);
+                        Turnament subT = new Turnament(newDepth, TextBoxSub.Text, parentT);
                         parentT.subTurnaments.Add(subT);
                         TurnamentHandler.ViewTurnaments(ListBoxTurnaments);
                         TextBoxParent.Text = subT.name;

@@ -24,9 +24,9 @@ namespace Turnament_NameSpace
     public class Turnament
     {
         public string name;
-        public string parentName;
+        public Turnament parent;
         public int depth;
-        public List<Player> participants;
+        public List<Player> players;
         public List<Turnament> subTurnaments;
 
 
@@ -34,15 +34,16 @@ namespace Turnament_NameSpace
         {
             this.depth = depth;
             this.name = name;
-            participants = new List<Player>();
+            this.parent = null;
+            players = new List<Player>();
             subTurnaments = new List<Turnament>();
         }
-        public Turnament(int depth, string name, string parentName)
+        public Turnament(int depth, string name, Turnament parent)
         {
             this.depth = depth;
             this.name = name;
-            this.parentName = parentName;
-            participants = new List<Player>();
+            this.parent = parent;
+            players = new List<Player>();
             subTurnaments = new List<Turnament>();
         }
         public void WriteSubTurnamentsToList(ListBox lBox)
@@ -78,6 +79,42 @@ namespace Turnament_NameSpace
                 }
             }
             return result;
+        }
+
+        public void AddPlayer(Player newPlayer)
+        {
+            foreach(Player p in players)
+            {
+                if (p.name == newPlayer.name)
+                {
+                    return;
+                }
+                
+            }
+            players.Add(newPlayer);
+            if(parent != null)
+            {
+                parent.AddPlayer(newPlayer);
+            }
+
+        }
+        public void RemovePlayer(Player removePlayer)
+        {
+            players.Remove(removePlayer);
+            foreach(Turnament t in subTurnaments)
+            {
+                t.RemovePlayer(removePlayer);
+            }
+        }
+
+
+        public void ShowPlayersInTurnament(ListBox lBox)
+        {
+            lBox.Items.Clear();
+            foreach(Player p in players)
+            {
+                lBox.Items.Add(p.name + ", " + p.age);
+            }
         }
         public void Clear()
         {
@@ -235,6 +272,17 @@ namespace Turnament_NameSpace
                 }
             }
             return null;
+        }
+        public static void DeletePlayer(string name)
+        {
+            foreach (Player p in Players)
+            {
+                if (name == p.name)
+                {
+                    Players.Remove(p);
+                }
+            }
+            
         }
     };
 }

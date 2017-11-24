@@ -10,7 +10,7 @@
 namespace WebApplication2 {
     
     
-    public partial class WebForm2 {
+    public partial class RegisterPlayersIntoTurnaments {
         
         /// <summary>
         /// form1 control.
@@ -22,31 +22,40 @@ namespace WebApplication2 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// LabelEdit control.
+        /// LabelResult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelEdit;
+        protected global::System.Web.UI.WebControls.Label LabelResult;
         
         /// <summary>
-        /// LabelDeletePlayer control.
+        /// LabelSelectTurnament control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelDeletePlayer;
+        protected global::System.Web.UI.WebControls.Label LabelSelectTurnament;
         
         /// <summary>
-        /// TextBoxName control.
+        /// LabelSelectPlayer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxName;
+        protected global::System.Web.UI.WebControls.Label LabelSelectPlayer;
+        
+        /// <summary>
+        /// LabelAddPlayerToTurnament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelAddPlayerToTurnament;
         
         /// <summary>
         /// Label1 control.
@@ -58,94 +67,94 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// TextBoxCurrentName control.
+        /// TextBoxSelectTurnament control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxCurrentName;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxSelectTurnament;
         
         /// <summary>
-        /// TextBoxDeletePlayer control.
+        /// ButtonSelect control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxDeletePlayer;
+        protected global::System.Web.UI.WebControls.Button ButtonSelect;
         
         /// <summary>
-        /// TextBoxAge control.
+        /// TextBoxSelectPlayer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxAge;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxSelectPlayer;
         
         /// <summary>
-        /// TextBoxNewName control.
+        /// ButtonSelectPlayer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxNewName;
+        protected global::System.Web.UI.WebControls.Button ButtonSelectPlayer;
         
         /// <summary>
-        /// ButtonDeletePlayer control.
+        /// ButtonAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonDeletePlayer;
+        protected global::System.Web.UI.WebControls.Button ButtonAdd;
         
         /// <summary>
-        /// TextBoxNewAge control.
+        /// ButtonRemove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxNewAge;
+        protected global::System.Web.UI.WebControls.Button ButtonRemove;
         
         /// <summary>
-        /// ButtonAddPlayer control.
+        /// LabelTurnament control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonAddPlayer;
+        protected global::System.Web.UI.WebControls.Label LabelTurnament;
         
         /// <summary>
-        /// ButtonEdit control.
+        /// LabelPlayers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonEdit;
+        protected global::System.Web.UI.WebControls.Label LabelPlayers;
         
         /// <summary>
-        /// Button1 control.
+        /// LabelPlayersInSelectedTurnament control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Label LabelPlayersInSelectedTurnament;
         
         /// <summary>
-        /// LabelResult control.
+        /// ListBoxTurnaments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelResult;
+        protected global::System.Web.UI.WebControls.ListBox ListBoxTurnaments;
         
         /// <summary>
         /// ListBoxPlayers control.
@@ -155,6 +164,15 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox ListBoxPlayers;
+        
+        /// <summary>
+        /// ListBoxPlayersInTurnament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBoxPlayersInTurnament;
         
         /// <summary>
         /// ButtonRefresh control.

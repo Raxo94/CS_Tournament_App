@@ -242,6 +242,13 @@
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="RegisterPlayersIntoTurnaments.aspx.cs">
+      <DependentUpon>RegisterPlayersIntoTurnaments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterPlayersIntoTurnaments.aspx.designer.cs">
+      <DependentUpon>RegisterPlayersIntoTurnaments.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Turnament.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -277,6 +284,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="HandleTurnaments.aspx" />
+    <Content Include="RegisterPlayersIntoTurnaments.aspx" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />

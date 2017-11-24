@@ -85,5 +85,12 @@ namespace WebApplication2
             }
             TurnamentHandler.ViewPlayers(ListBoxPlayers);
         }
+
+        protected void ButtonDeletePlayer_Click(object sender, EventArgs e)
+        {
+            Player p = TurnamentHandler.FindPlayer(TextBoxDeletePlayer.Text);
+            TurnamentHandler.Players.Remove(p);
+            TurnamentHandler.ViewPlayers(ListBoxPlayers);
+        }
     }
 }

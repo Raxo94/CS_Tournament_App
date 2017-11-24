@@ -46,6 +46,13 @@ namespace WebApplication2
         protected void ButtonClearPlayers_Click(object sender, EventArgs e)
         {
             TurnamentHandler.Players.Clear();
+            TurnamentHandler.ViewTurnaments(ListBoxTurnaments);
+            TurnamentHandler.ViewPlayers(ListBoxPlayers);
+        }
+
+        protected void ButtonRegisterPlayersInTurnaments_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegisterPlayersIntoTurnaments.aspx");
         }
     }
 }
