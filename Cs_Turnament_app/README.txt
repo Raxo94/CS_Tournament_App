@@ -5,7 +5,7 @@ Det här är mitt svar på turnerings uppgiften. Jag är rätt nöjd med resultatet oc
 Programmet är en C# applikation som skapar en hemsida. Hemsidan består av en huvudmeny, turnerings hanterings sida, spelar hanterings sida och till sist 
 en sida för att registrera och avregistrera spelare i turneringar. 
 
-När man startar programmet är det viktigt att lägga till  'MainPage.aspx' på slutet av sin URL för att föras till startsidan. Därifrån kan man ta sig 
+När man startar programmet är det viktigt att lägga till  '/MainPage.aspx' på slutet av sin URL för att föras till startsidan. Därifrån kan man ta sig 
 överallt med knappar. 
 
 I Turnament.CS finns en spelarklass samt turneringsklass. Där finns också en statisk klass som används för att spara turneringar och spelare i sig som kallas 
