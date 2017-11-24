@@ -22,6 +22,33 @@ namespace WebApplication2 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// LabelRegisterTurnament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelRegisterTurnament;
+        
+        /// <summary>
+        /// LabelRemoveTurnament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelRemoveTurnament;
+        
+        /// <summary>
+        /// TextBoxRegisterTurnament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxRegisterTurnament;
+        
+        /// <summary>
         /// TextBoxParent control.
         /// </summary>
         /// <remarks>
@@ -40,6 +67,42 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.TextBox TextBoxSub;
         
         /// <summary>
+        /// TextBoxRemoveTurnament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxRemoveTurnament;
+        
+        /// <summary>
+        /// ButtonRegisterTurnament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonRegisterTurnament;
+        
+        /// <summary>
+        /// ButtonRegisterSub control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonRegisterSub;
+        
+        /// <summary>
+        /// ButtonRemoveTurnament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonRemoveTurnament;
+        
+        /// <summary>
         /// ListBoxTurnaments control.
         /// </summary>
         /// <remarks>
@@ -56,15 +119,6 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonRefresh;
-        
-        /// <summary>
-        /// ButtonRegister control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonRegister;
         
         /// <summary>
         /// ButtonCancel control.

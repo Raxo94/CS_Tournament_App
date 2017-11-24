@@ -86,15 +86,33 @@ namespace Turnament_NameSpace
                 t.Clear();
             }
             subTurnaments.Clear();
-        } 
+        }
+
+        public void ClearSpecific(string name)
+        {
+            foreach (Turnament t in subTurnaments)
+            {
+                if (t.name == name)
+                {
+                    t.Clear();
+                    subTurnaments.Remove(t);
+                    return;
+                }
+                else
+                {
+                    t.ClearSpecific(name);
+                }
+
+            }
+
+        }
     }
 
 
     public static class TurnamentHandler
     {
-        public static int five = 6;
         public static List<Turnament> turnaments = new List<Turnament>();
-
+        public static List<Player> Players = new List<Player>();
 
         public static void ViewTurnaments(ListBox lBox)
         {
@@ -148,6 +166,75 @@ namespace Turnament_NameSpace
             }
             turnaments.Clear();
 
+        }
+
+        public static void ClearSpecific(string name)
+        {
+            foreach (Turnament t in turnaments)
+            {
+                if (t.name == name)
+                {
+                    t.Clear();
+                    turnaments.Remove(t);
+                    return;
+                }
+                else
+                {
+                    t.ClearSpecific(name);
+                }
+
+            }
+            
+        }
+        public static void ViewPlayers(ListBox lBox)
+        {
+            lBox.Items.Clear();
+            foreach (Player p in Players)
+            {
+                lBox.Items.Add(p.name + ", " + p.age);
+            }
+        }
+        public static bool IsPlayerNameFine(string name)
+        {
+            if (name != "")
+            {
+                foreach(Player p in Players)
+                {
+                    if (p.name == name)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+        public static bool IsPlayerNameFine(string name, string exception)
+        {
+            if (name != "")
+            {
+                foreach (Player p in Players)
+                {
+                    if (p.name == name && name!= exception)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+
+        public static Player FindPlayer(string name)
+        {
+            foreach(Player p in Players)
+            {
+                if (name == p.name)
+                {
+                    return p;
+                }
+            }
+            return null;
         }
     };
 }

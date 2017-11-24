@@ -13,33 +13,39 @@ namespace WebApplication2
         protected void Page_Load(object sender, EventArgs e)
         {
             TurnamentHandler.ViewTurnaments(ListBoxTurnaments);
+            TurnamentHandler.ViewPlayers(ListBoxPlayers);
         }
         
 
-        protected void ButtonRegisterPlayer_Click(object sender, EventArgs e)
+        protected void ButtonHandlePlayers_Click(object sender, EventArgs e)
         {
-          
+            Response.Redirect("HandlePlayers.aspx");
         }
 
-        protected void ButtonRegisterTurnament_Click(object sender, EventArgs e)
+
+        protected void ButtonHandleTurnament_Click(object sender, EventArgs e)
         {
-            Response.Redirect("RegisterTurnament.aspx");
+            Response.Redirect("HandleTurnaments.aspx");
         }
 
         protected void ButtonRefresh_Click(object sender, EventArgs e)
         {
             TurnamentHandler.ViewTurnaments(ListBoxTurnaments);
+            TurnamentHandler.ViewPlayers(ListBoxPlayers);
         }
 
-        protected void ButtonRegisterSubTurnament_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("RegisterSubTurnament.aspx");
-        }
+       
 
         protected void ClearTurnaments_Click(object sender, EventArgs e)
         {
             TurnamentHandler.ClearTurnaments();
             TurnamentHandler.ViewTurnaments(ListBoxTurnaments);
+            TurnamentHandler.ViewPlayers(ListBoxPlayers);
+        }
+
+        protected void ButtonClearPlayers_Click(object sender, EventArgs e)
+        {
+            TurnamentHandler.Players.Clear();
         }
     }
 }

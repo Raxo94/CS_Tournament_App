@@ -22,40 +22,22 @@ namespace WebApplication2 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ButtonRegisterT control.
+        /// ButtonHandlePlayers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonRegisterT;
+        protected global::System.Web.UI.WebControls.Button ButtonHandlePlayers;
         
         /// <summary>
-        /// ButtonRegisterTurnament control.
+        /// ButtonHandleTurnament control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonRegisterTurnament;
-        
-        /// <summary>
-        /// ButtonRefresh control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonRefresh;
-        
-        /// <summary>
-        /// ButtonRegisterSubTurnament control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonRegisterSubTurnament;
+        protected global::System.Web.UI.WebControls.Button ButtonHandleTurnament;
         
         /// <summary>
         /// LabelTurnaments control.
@@ -67,6 +49,15 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.Label LabelTurnaments;
         
         /// <summary>
+        /// LabelPlayer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelPlayer;
+        
+        /// <summary>
         /// ListBoxTurnaments control.
         /// </summary>
         /// <remarks>
@@ -76,6 +67,24 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.ListBox ListBoxTurnaments;
         
         /// <summary>
+        /// ListBoxPlayers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBoxPlayers;
+        
+        /// <summary>
+        /// ButtonRefresh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonRefresh;
+        
+        /// <summary>
         /// ClearTurnaments control.
         /// </summary>
         /// <remarks>
@@ -83,5 +92,14 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ClearTurnaments;
+        
+        /// <summary>
+        /// ButtonClearPlayers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonClearPlayers;
     }
 }

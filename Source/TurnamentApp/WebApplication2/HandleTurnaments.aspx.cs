@@ -15,7 +15,7 @@ namespace WebApplication2
             TurnamentHandler.ViewTurnaments(ListBoxTurnaments);
         }
 
-        protected void ButtonRegister_Click(object sender, EventArgs e)
+        protected void ButtonRegisterSub_Click(object sender, EventArgs e)
         {
             Turnament parentT = TurnamentHandler.FindTurnament(TextBoxParent.Text);
             if(parentT != null)
@@ -61,6 +61,30 @@ namespace WebApplication2
         protected void ButtonRefresh_Click(object sender, EventArgs e)
         {
             TurnamentHandler.ViewTurnaments(ListBoxTurnaments);
+        }
+
+        protected void ButtonRegisterTurnament_Click(object sender, EventArgs e)
+        {
+            if (TurnamentHandler.IsNameFine(TextBoxRegisterTurnament.Text))
+            {
+                Turnament temp = new Turnament(0, TextBoxRegisterTurnament.Text);
+                TurnamentHandler.turnaments.Add(temp);
+                TurnamentHandler.ViewTurnaments(ListBoxTurnaments);
+                LabelResult.Text = "Success";
+            }
+            else
+            {
+                LabelResult.Text = "Fill the textbox with a unique name";
+            }
+        }
+
+        
+        protected void ButtonRemoveTurnament_Click(object sender, EventArgs e)
+        {
+            TurnamentHandler.ClearSpecific(TextBoxRemoveTurnament.Text);
+            TurnamentHandler.ViewTurnaments(ListBoxTurnaments);
+                
+            
         }
     }
 }
